@@ -1,1 +1,1 @@
-# kr-comp-challenge-2
+This challenge was a challenge... I just ran out of time and was not able to make it responsive. I wrestled using both grid and flexbox and ended up scraping my entire project around 6:00pm Monday night and starting all over. I learned a lot and know that I could finish, given more time but I know I have a lot yet to learn, including time management on future projects. I'm bummed I wasn't able to pull it off but I am not beaten. I have confidence I will get there.
