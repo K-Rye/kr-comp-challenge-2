@@ -1,0 +1,242 @@
+
+
+
+.top-header {
+  background-color: gray;
+  display: flex;
+  height: 10em;
+}
+
+.top-header-left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 25em;
+}
+
+.main-header {
+  align-items: center;
+  display: flex;
+  font-size: 1em;
+  padding: 0em 1em .5em 1em;
+}
+
+.top-header-right {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 75em;
+}
+
+
+.info-text {
+  color: white;
+  font-size: 1.5em;
+  padding-right: .5em;
+}
+
+.info-text:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.info-icons {
+  color: white;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.info-icons:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.5em;
+  width: 9em;
+
+}
+
+.music-makers {
+  font-size: 2.5em;
+  padding: 0em .5em .5em;
+}
+
+.southern-blues {
+  font-size: 2.5em;
+  padding: 1em .5em .5em;
+  background-color: #EFEFEF;
+}
+
+main {
+  background-color: #EFEFEF;
+}
+
+.profile-container {
+  font-family: serif;
+  /*background-color: #EFEFEF;*/
+  margin: 2rem 1rem 2rem 1rem; 
+  display: grid;
+  grid-gap: .5em;
+  height: 100%
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(16.7rem, auto);
+  align-content: center;
+  grid-template-areas: 
+    "profile1 profile2 profile3 profile4"
+    "profile5 profile6 profile7 profile8";
+}
+
+.profilebox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+  background-color: #FFFF:
+  border-box: ;
+  box-shadow: 0px 1px 2px #7F6833;
+  color: green;
+  height: 28em;
+  width: 20em;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between; 
+  height: 10em;
+  width: 20em;
+  color: #93CFEF;
+  padding: 0em 2em 0em 0em;
+  background-repeat: no-repeat;
+  background-size: 20em 10em;
+}
+
+.play-btn {
+  background-image: url('https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_play_arrow_48px-512.png');
+    height: 3em;
+    width: 3em;
+    margin: 3%;
+}
+
+.profile-info {
+  color: #4D4D4D;
+  padding-left: 1em;
+}
+
+.aside {
+  padding-right: 1em;
+}
+
+.profile1 {
+  background-image: url('http://www.jimmywilliamsphotography.com/upload/photography_image/normal/1421692517_02-2071488-103.jpg');
+  grid-area: profile1;
+}
+
+.profile2 {
+  background-image: url('http://images.photo-visible.com/photo_public/2009/2/800/800_370.jpg');
+  grid-area: profile2;
+}
+
+.profile3 {
+  background-image: url('https://farm6.staticflickr.com/5262/5740611002_0164acaa9e.jpg');
+  grid-area: profile3;
+}
+
+.profile4 {
+  background-image: url('http://www.jimmywilliamsphotography.com/upload/photography_image/normal/1421692517_11-2081813-913-001470.jpg');
+  grid-area: profile4;
+}
+
+.profile5 {
+  background-image: url('http://www.jimmywilliamsphotography.com/upload/photography_image/normal/1421692517_03-2071550-119-003794.jpg');
+  grid-area: profile5;
+}
+
+.profile6 {
+  background-image: url('https://americanamusicshow.com/wp-content/uploads/2014/10/ForFrankPBS-14-1024x681.jpg');
+  grid-area: profile6;
+}
+
+.profile7 {
+  background-image: url('https://ssl.c.photoshelter.com/img-get/I0000ircX2d_LDX4/s/650/2071488-104.jpghttps://i.pinimg.com/originals/05/ba/21/05ba21901edc87eccb5ddc24492e09fb.jpg');
+  grid-area: profile7;
+}
+
+.profile8 {
+  background-image: url('http://1.bp.blogspot.com/-ce9BVFir6lw/To3AgSEV4II/AAAAAAAAAXQ/gq4Fkg3owRA/s1600/Williams_5_Cool+Hand.JPG');
+ grid-area: profile8;
+ }
+
+@media screen and (max-width: 900px) {  
+  .profile-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(16.7rem, auto); 
+  align-content: center;
+  grid-template-areas:
+    "profile1 profile2 profile3 profile4"
+    "profile5 profile6 profile7 profile8"; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(16.7rem, auto); 
+    align-content: center;
+    grid-template-areas:
+      "profile1 profile2" 
+      "profile3 profile4"
+      "profile5 profile6"
+      "profile7 profile8";
+  }
+   .box9 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rKQt_UQTn0D6hEcqst-SjBtIb2yO-WnWkPkLklBCqE7Xzoosrg');
+   }
+}
+    
+@media screen and (max-width: 400px) {
+.profile-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(16.7rem, auto); 
+  align-content: center;
+  grid-template-areas:
+    "profile1" 
+    "profile2" 
+    "profile3" 
+    "profile4"
+    "profile5" 
+    "profile6" 
+    "profile7" 
+    "profile8";
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
